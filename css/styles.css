@@ -1,602 +1,220 @@
-/* ################## colors ###################################### */
-/*
-#223566 h1 hr
-#2c1b15 text
-#446c65 self
-#694e52 navbar
-#a27166 link
-#6081a4 h2 h4 def/class
-#a4cad1 buttons/ img borders
-#e2b3a2 link hover
-#ece7cf background */
-/*
-#b03a48
-#e0c872
-*/
-
-/* ################### tag styles ################################## */
-body {
-  background-color: #ece7cf;
-  color: #2c1b15;
-  font-family: monospace;
-  font-size: 1.5em;
-  line-height: 1.5;
-  margin: 0;
-  text-align: center;
-}
-
-p {
-  color: #2c1b15;
-}
-
-h1 {
-  color: #223566;
-  font-family: 'JetBrains Mono', monospace;
-  line-height: 1;
-  margin: 0;
-}
-
-h2 {
-  color: #223566;
-  font-family: 'JetBrains Mono', monospace;
-  line-height: 1;
-  margin: 0 auto;
-  font-size: 90%;
-  text-align: center;
-}
-
-h3 {
-  color: #694e52;
-}
-
-h4 {
-  font-size: 1.17em;
-}
-
-h5 {
-  color: #223566;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-hr {
-  border-style: none;
-  border-top: 15px dotted #223566;
-  position: relative;
-  margin: 0 auto;
-  bottom: 7.5px;
-  width: 10%;
-}
-
-a {
-  color: #a27166;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #446c65;
-}
-
-/* ################### class styles ################################## */
-
-/* Home */
-
-.top-container {
-  background-image: url(../images/Ejiri_t.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 200%;
-  background-position: 0 0;
-  /* background-size: 100% 90%;
-  background-position: 0 -500%; */
-}
-
-.home {
-  display: inline-block;
-  position: relative;
-  width: 50%;
-  left: 5%;
-  padding-top: 15%;
-  padding-bottom: 7%;
-  text-align: left;
-  font-weight: bold;
-}
-
-.intro-txt {
-  margin-bottom: 5%;
-}
-
-.shuttle {
-  width: 35%;
-  position: absolute;
-  bottom: 0;
-  left: 90%;
-  opacity: 70%;
-}
-
-.self-img {
-  width: 35%;
-  position: absolute;
-  left: -40%;
-  opacity: 80%;
-}
-
-.nav-bar {
-  background-color: #2c1b15;
-  opacity: 80%;
-  width: 40%;
-  margin-top: 1%;
-  left: 30%;
-  padding: 3px 10px 5px 10px;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 1px 3px #ece7cf;
-  -moz-box-shadow: 0px 1px 3px #ece7cf;
-  box-shadow: 0px 2px 6px #ece7cf;
-  position: fixed;
-  z-index: 1;
-}
-
-.nav-link {
-  padding: 2%;
-  color: #ece7cf;
-  font-size: 0.7em;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.nav-link:hover {
-  color: #e2b3a2;
-}
-
-.btn-1 {
-  padding-top: 5%;
-  padding-bottom: 10%;
-  background-color: #a4cad1;
-  color: #223566;
-}
-
-.btn-1:hover {
-  background: #223566;
-  color: #a4cad1;
-}
-
-/* Projects */
-
-.project-container {
-  height: 300px;
-  background-image: url(../images/smoke.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-.color-layer-projects {
-  background-color: rgba(68,108,101,0.8);
-  height: 300px;
-}
-
-/* Resume */
-
-.middle-container {
-  background-image: url(../images/smoke.png), url(../images/Ejiri_in_the_Suruga_province.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 100% 170%, top;
-}
-
-.color-layer {
-  background-color: rgba(236,231,207,0.95);
-}
-
-.me-img {
-  width: 40%;
-  position: absolute;
-  top: 0;
-  right: 10%;
-}
-
-.pictograms {
-  position: absolute;
-  top: 0;
-  right: 10%;
-}
-
-.skill-img {
-  width: 2%;
-}
-
-.edu-images {
-position: absolute;
-top: 62%;
-left: 5%;
-width: 20%;
-padding-bottom: 1%;
-}
-
-.edu-img {
-  width: 50%;
-}
-
-.btn-popup {
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 100%;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
-  padding: 20px 10px 20px 10px;
-  font-size: 1em;
-  opacity: 80%;
-}
-
-.btn-2 {
-  background-color: #e2b3a2;
-  color: #223566;
-  position: absolute;
-  left: 70%;
-  top: 2%;
-}
-
-.btn-2:hover {
-  background-color: #6081a4;
-  color: #e2b3a2;
-}
-
-.btn-4 {
-  background-color: #a4cad1;
-  color: #446c65;
-  position: absolute;
-  left: 64%;
-  top: 4%;
-}
-
-.btn-4:hover {
-  background-color: #446c65;
-  color: #a4cad1;
-}
-
-.resume {
-  position: relative;
-  text-align: left;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  left: 5%;
-  width: 95%
-}
-
-.selfs {
-  position: relative;
-  left: 5%;
-  width: 90%;
-}
-
-.skill-txt {
-  position: relative;
-  line-height: 2;
-  font-size: 85%;
-  left: 5%;
-  width: 40%;
-}
-
-.exp-txt {
-  position: relative;
-  line-height: 2;
-  font-size: 85%;
-  left: 5%;
-  width: 85%;
-}
-
-.edu-txt {
-  position: relative;
-  line-height: 3;
-  font-size: 85%;
-  left: 17%;
-  width: 85%;
-}
-
-/* Contact */
-
-.contact-me {
-  background-image: url(../images/smoke.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position: 0 400px;
-  background-color: #a4cad1;
-  text-align: left;
-  padding-bottom: 50px;
-  position: relative;
-}
-
-.contact-info {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 5%;
-  left: 5%;
-  font-size: 85%;
-}
-
-.btn {
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
-  padding: 10px 20px 10px 20px;
-  font-size: 0.8em;
-}
-
-.btn-0 {
-  position: relative;
-  width: auto;
-  height: auto;
-  background-color: #223566;
-  color: #ece7cf;
-}
-
-.btn-0:hover {
-  background-color: #ece7cf;
-  color: #223566;
-}
-
-/* Footer */
-
-.bottom-container {
-  background-image: url(../images/Ejiri_in_the_Suruga_province.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  padding-top: 20px;
-}
-
-.color-layer-footer {
-  background-color: rgba(34,53,102,0.75);
-  padding: 10px 0 10px;
-}
-
-.footer-link {
-  color: #6081a4;
-  margin: 0 20px 0;
-}
-
-.copyright {
-  color: #6081a4;
-  font-size: 70%;
-}
-
-/* Pop Up */
-
-* {
-  box-sizing: border-box;
-}
-
-.popup {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  transition: .64s ease-in-out;
-}
-
-.popup-inner {
-  position: relative;
-  bottom: -100vw;
-  right: -100vh;
-  display: flex;
-  align-items: center;
-  max-width: 800px;
-  max-height: 600px;
-  width: 60%;
-  height: 50%;
-  background-image: url(../images/Ejiri_in_the_Suruga_province.jpeg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 0 75%;
-  border-radius: 250px;
-  transform: scaleX();
-  transition: .64s ease-in-out;
-}
-
-.color-layer-popup {
-  background-color: rgba(96,129,164,0.9);
-  border-radius: 250px;
-  padding: 23px;
-}
-
-.popuptext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding-left: 5rem;
-  margin-right: 40px;
-}
-
-.popuptext h1 {
-  font-size: 2rem;
-}
-
-.popuptext p {
-  font-size: 1rem;
-  color: #ece7cf;
-}
-
-.popup:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup:target .popup-inner {
-  bottom: 0;
-  right: 0;
-  transform: rotate(0);
-}
-
-.closepopup {
-  position: absolute;
-  right: -1rem;
-  top: -1rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: .875rem;
-  font-weight: 300;
-  border-radius: 100%;
-  background-color: #a4cad1;
-  z-index: 4;
-  color: #223566;
-  line-height: 3rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.closepopup:hover {
-  background-color: #223566;
-  color: #a4cad1;
-}
-
-/* Form */
-
-.form {
-  position: absolute;
-  display: inline-block;
-  width: 500px;
-  margin: 50px auto;
-  right: 5%;
-  top: 0;
-}
-
-.form-fields {
-  margin: 20px auto;
-}
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #a27166;
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #694e52;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #a27166;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #694e52;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #a27166;
-}
-
-input:focus::placeholder, textarea:focus:placeholder {
-  color: #694e52;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #a27166;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #694e52;
-}
-
-/* on hover placeholder */
-
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: #a4cad1;
-}
-
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #e2b3a2;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #a4cad1;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #e2b3a2;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #a4cad1;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #e2b3a2;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #a4cad1;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
-  color: #e2b3a2;
-}
-
-input {
-  font-size: 0.8em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-
-  background: transparent;
-  outline: none;
-  color: #446c65;
-  font-family: monospace;
-
-  border: solid 1px #446c65;
-  border-bottom: none;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-input:hover {
-  background: #ece7cf;
-  color: #6081a4;
-}
-
-textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-
-  background: transparent;
-  outline: none;
-
-  color: #446c65;
-  font-size: 0.8em;
-
-  border: solid 1px #446c65;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-textarea:hover {
-  background: #ece7cf;
-  color: #6081a4;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JudyPrograms</title>
+  <meta name="description" content="JudyPrograms.com offers a passionate and
+    valuable asset for your software development projects.">
+  <meta name="author" content="Judith Kats">
+  <meta name="keywords" content="Python,Java,SQL,HTML,CSS,Javascript">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="css/favicon2.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="nav-bar">
+    <a class="nav-link" href="#home">[home]</a>
+    <a class="nav-link" href="#projects">[projects]</a>
+    <a class="nav-link" href="#resume">[resume]</a>
+    <a class="nav-link" href="#contact">[contact]</a>
+  </div>
+
+  <div class="top-container" id="home">
+    <div class="home">
+      <img class="self-img" src="images/myself.png" alt="">
+      <img class="shuttle" src="images/space-shuttle.png" alt="">
+      <h1>Judy Programs</h1>
+      <h3><span style="color:#6081a4;">class</span> FullStackDeveloper:</h3>
+      <p class="intro-txt">
+        ''' Hello world! My name is Judy and I discovered my passion for IT in December 2020. I fell in love with
+        <strong><a href="https://www.python.org" target=_blank>Python</a></strong>, got fascinated by
+        <strong><a href="https://youtu.be/YbNmL6hSNKw" target=_blank>IoT Development</a></strong> and curious about
+        <strong><a href="https://www.we-rise.co/content/images/2021/03/franki-chamaki-1K6IQsQbizI-unsplash--1-.jpg" target=_blank>Data Engineering</a></strong>.
+        Since then, I am studying daily to become a <strong>Software Developer</strong>. This website is the result of my progress so far. '''
+      </p>
+      <a class="btn btn-1" href="mailto:hello@judyprograms.io">connect_with_me()</a>
+    </div>
+  </div>
+
+  <div class="project-container" id="projects">
+    <div class="color-layer-projects">
+      <hr>
+      <h2>[Projects]</h2>
+    </div>
+  </div>
+
+  <div class="middle-container" id="resume">
+    <div class="color-layer">
+      <hr>
+      <h2>[Resume]</h2>
+      <div class="resume">
+        <h3><span style="color:#6081a4;">def</span> <span style="color:#446c65;">__init__</span> (<span style="color:#446c65;">self</span>):</h3>
+        <img class="me-img" src="images/me.png" alt="">
+        <div class="selfs">
+          <div class="edu-images">
+            <img class="edu-img" src="images/png/novi.png" alt="Novi-Hogeschool"><br>
+            <img class="edu-img" src="images/png/bit.svg" alt="Bit-Academy"><br>
+            <img class="edu-img" src="images/png/appbrewery.png" alt="The-London-App-Brewery"><br>
+            <img class="edu-img" src="images/png/uva.png" alt="University-of-Amsterdam"><br>
+            <img class="edu-img" src="images/png/tudelft.png" alt="Delft-University-of-Technology">
+          </div>
+          <h4><span style="color:#446c65;">self</span>.skills = {</h4>
+          <p class="skill-txt">
+            ⚙︎ <strong>programming</strong>: [python, java, html, css, javascript, sql],
+            <br>
+            ⚙︎ <strong>tech</strong>: [architecture, design_thinking, autocad, sketchup, maya],
+            <br>
+            ⚙︎ <strong>science</strong>: [philosophy, psychology, experimentation, data_science, spss, r],<br>
+            ⚙︎ <strong>head_chef</strong>: [food_design, menu_design, operations, efficiency, team_management],<br>
+            ⚙︎ <strong>languages</strong>: [english_c2, german_c1, french_b2, spanish_a2, dutch_native],<br>
+          </p>
+          <h4>}</h4>
+
+          <a class="btn-popup btn-2" href="#popup">work</a>
+          <div class="popup" id="popup">
+            <div class="popup-inner">
+              <div class="color-layer-popup">
+                <div class="popuptext">
+                  <h1>Working Experience</h1>
+                  <p>
+                    ⚙︎ <strong>Head Chef</strong>, Melkweg, Amsterdam <i>2019 - 2020</i><br>
+                    ⚙︎ <strong>Chef de Partie</strong>, Neni, Amsterdam <i>2019</i><br>
+                    ⚙︎ <strong>Sous Chef/ Project Manager</strong>, Peperwortel, Amsterdam <i>2018</i><br>
+                    ⚙︎ <strong>Youth Care Worker</strong>, Outreach, Berlin <i>2017</i><br>
+                    ⚙︎ <strong>Culinary Manager/ Chef</strong>, Marley Spoon, Berlin <i>2016 - 2017</i><br>
+                    ⚙︎ <strong>Banquet Sales Manager</strong>, Volkshotel, Amsterdam <i>2014 - 2015</i><br>
+                    ⚙︎ <strong>Sous Chef</strong>, Peperwortel, Amsterdam <i>2012 - 2014</i><br>
+                    ⚙︎ <strong>Operations Manager</strong>, Peperwortel, Amsterdam <i>2007 - 2012</i><br></a></p>
+                </div>
+                <a class="closepopup" href="#">X</a>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn-popup btn-4" href="#popup-2">life</a>
+          <div class="popup" id="popup-2">
+            <div class="popup-inner">
+              <div class="color-layer-popup">
+                <div class="popuptext">
+                  <h1>Things That Keep Me Busy</h1>
+                  <p>
+                    ⚙︎ <strong>I am a Football Trainer</strong>, at VV Swift Amsterdam<br>
+                    ⚙︎ <strong>Also a Football Player</strong>, at VVA Spartaan Amsterdam<br>
+                    ⚙︎ <strong>Bouldering Fanatically</strong>, twice a week or as much as I can<br>
+                    ⚙︎ <strong>Career Coaching for Kids</strong>, at JINC Amsterdam<br>
+                    ⚙︎ <strong>Playing the Drums</strong>, taking regular classes since 2015<br>
+                    ⚙︎ <strong>Gardening</strong>, taking care of the plants in great detail<br>
+                    ⚙︎ <strong>Learning Arabic</strong>, a couple of words every day<br>
+                    ⚙︎ <strong>Designing Woodwork</strong>, mostly drawing, sketching, dreaming<br></a></p>
+                </div>
+                <a class="closepopup" href="#">X</a>
+              </div>
+            </div>
+          </div>
+
+          <h4><span style="color:#446c65;">self</span>.education = {</h4>
+          <p class="edu-txt">
+            ⚙︎ <a href="https://www.novi.nl/full-stack-developer/">BSc Bootcamp: Full-Stack Developer (60ects)</a>,
+            NOVI Hogeschool Utrecht,
+            2021 <i>(in progress)</i><br>
+            ⚙︎ <a href="https://nlleertdoor.bit-academy.nl/#opleidingen">Junior Data Engineer Bootcamp</a>,
+            Bit Academy Amsterdam,
+            <i>2021 (in progress)</i><br>
+            ⚙︎ <a href="https://www.udemy.com/course/100-days-of-code/">The Complete Python Pro Bootcamp 2021</a>,
+            London App Brewery @Udemy,
+            <i>2021 (in progress)</i><br>
+            ⚙︎ <strong>Minor Philosophy</strong> (90ects),
+            University of Amsterdam,
+            <i>2012</i><br>
+            ⚙︎ <strong>Bsc Psychology</strong>,
+            University of Amsterdam,
+            <em>2010 (cum laude)</em><br>
+            ⚙︎ <strong>Propedeuse Architecture</strong> (60ects),
+            Delft University of Technology,
+            <i>2003</i>
+            <br>
+          </p>
+          <h4>}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-me" id="contact">
+    <hr>
+    <h2>[Contact]</h2>
+    <div class="selfs">
+      <h3><span style="color:#6081a4;">def</span> connect_with_me():</h3>
+      <div class="contact-info">
+        <p>
+          mail = "hello@judyprograms.io"<br>
+          <br>
+          <span style="color:#446c65;">for</span> any_problem <span style="color:#446c65;">in</span> programming_space:<br>
+          &emsp;&emsp;&emsp;&emsp;<span style="color:#446c65;">if</span> you_need_my_solution:<br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="mailto:judyprograms@gmail.com">send_message(<span style="color:#446c65;">mail</span>)</a><br>
+          &emsp;&emsp;&emsp;&emsp;<span style="color:#446c65;">elif</span> you_wanna_work_together:<br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/JudyPrograms">check_my_github()</a><br>
+          <br>
+          <span style="color:#446c65;">if</span> you_like_to_connect_on_linkedin:<br>
+          &emsp;&emsp;&emsp;&emsp;<a href="https://www.linkedin.com/judithkats">check_my_linkedin()</a><br>
+          <br>
+          <span style="color:#446c65;">return</span> response_from_judy()<br>
+        </p>
+      </div>
+
+      <div class="form">
+        <h5 class="form-header">Contact Form</h5>
+        <form class="form-fields" action="mailto:judyprograms@gmail.com" method="post" enctype="text/plain">
+          <input type="text" placeholder="your_name">
+          <input type="text" placeholder="your_e_mail">
+          <textarea type="text" placeholder="your_message"></textarea>
+          <input class="btn btn-0" value="connect_with_me()" type="submit">
+        </form
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="color-layer-footer">
+      <p class="copyright"> <i>The design of this website was inspired by a woodblock print by Katsushika Hokusai:<br>
+          <a class="footer-link" href="https://www.nytimes.com/interactive/2020/08/07/arts/design/hokusai-fuji.html">“Ejiri in Suruga Province.”</a></i>
+        <br>
+      </p>
+      <p class="copyright">© 2021 Judith Kats.<br>
+      </p>
+    </div>
+  </div>
+
+  <!-- <img class="skill-img" src="images/png/004-python-language-logotype.png" alt="python3">
+    <img class="skill-img" src="images/png/002-java.png" alt="java">
+    <img class="skill-img" src="images/png/005-html.png" alt="html5">
+    <img class="skill-img" src="images/png/003-css-3.png" alt="css3">
+    <img class="skill-img" src="images/png/006-javascript.png" alt="javascript">
+    <img class="skill-img" src="images/png/autocad.png" alt="javascript">
+    <img class="skill-img" src="images/png/sketchup.png" alt="javascript"> -->
+
+  <!-- <div class="form">
+      <form action="mailto:judyprograms@gmail.com" method="post" enctype="text/plain">
+          <label>Your Name:</label>
+          <input type="text" name="yourName" value=""><br>
+          <label>Your Email:</label>
+          <input type="email" name="yourEmail" value=""><br>
+          <label>Your Message:</label><br>
+          <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+          <input class="btn" type="submit" name="submit" value="submit">
+        </form>
+    </div> -->
+
+</body>
+
+</html>
