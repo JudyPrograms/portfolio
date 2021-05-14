@@ -21,13 +21,13 @@
 <body>
 
   <div class="nav-bar">
-    <a class="nav-link" href="#">[home]</a>
-    <a class="nav-link" href="#">[projects]</a>
-    <a class="nav-link" href="#">[resume]</a>
-    <a class="nav-link" href="#">[contact]</a>
+    <a class="nav-link" href="#home">[home]</a>
+    <a class="nav-link" href="#projects">[projects]</a>
+    <a class="nav-link" href="#resume">[resume]</a>
+    <a class="nav-link" href="#contact">[contact]</a>
   </div>
 
-  <div class="top-container">
+  <div class="top-container" id="home">
     <div class="home">
       <img class="self-img" src="images/myself.png" alt="">
       <img class="shuttle" src="images/space-shuttle.png" alt="">
@@ -44,14 +44,14 @@
     </div>
   </div>
 
-  <div class="project-container">
+  <div class="project-container" id="projects">
     <div class="color-layer-projects">
       <hr>
       <h2>[Projects]</h2>
     </div>
   </div>
 
-  <div class="middle-container">
+  <div class="middle-container" id="resume">
     <div class="color-layer">
       <hr>
       <h2>[Resume]</h2>
@@ -148,7 +148,7 @@
     </div>
   </div>
 
-  <div class="contact-me">
+  <div class="contact-me" id="contact">
     <hr>
     <h2>[Contact]</h2>
     <div class="selfs">
@@ -159,11 +159,11 @@
           <br>
           <span style="color:#446c65;">for</span> any_problem <span style="color:#446c65;">in</span> programming_space:<br>
           &emsp;&emsp;&emsp;&emsp;<span style="color:#446c65;">if</span> you_need_my_solution:<br>
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;send_message(<span style="color:#446c65;">mail</span>)<br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <a href="mailto:judyprograms@gmail.com">send_message(<span style="color:#446c65;">mail</span>)</a><br>
           &emsp;&emsp;&emsp;&emsp;<span style="color:#446c65;">elif</span> you_wanna_work_together:<br>
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/JudyPrograms">check_my_github()</a><br>
           <br>
-          <span style="color:#446c65;">if</span> you_wanna_connect_on_linkedin:<br>
+          <span style="color:#446c65;">if</span> you_like_to_connect_on_linkedin:<br>
           &emsp;&emsp;&emsp;&emsp;<a href="https://www.linkedin.com/judithkats">check_my_linkedin()</a><br>
           <br>
           <span style="color:#446c65;">return</span> response_from_judy()<br>
@@ -171,7 +171,7 @@
       </div>
 
       <div class="form">
-        <h5>Contact Form</h5>
+        <h5 class="form-header">Contact Form</h5>
         <form class="form-fields" action="mailto:judyprograms@gmail.com" method="post" enctype="text/plain">
           <input type="text" placeholder="your_name">
           <input type="text" placeholder="your_e_mail">
